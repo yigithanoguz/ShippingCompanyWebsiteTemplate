@@ -1,0 +1,30 @@
+{
+  "name": "shippingcompanywebsitetemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yigithanoguz/ShippingCompanyWebsiteTemplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yigithanoguz/ShippingCompanyWebsiteTemplate/issues"
+  },
+  "homepage": "https://github.com/yigithanoguz/ShippingCompanyWebsiteTemplate#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.49.10",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
