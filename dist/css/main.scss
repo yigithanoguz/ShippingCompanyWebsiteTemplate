@@ -13,6 +13,7 @@ body {
             nav {
                 z-index: 1;
                 padding: 0 !important;
+                transition: 300ms;
 
                 div {
                     height: 50px;
@@ -66,6 +67,21 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     gap: 30px;
+                }
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                    gap: 10px;
+                    .icon{  
+                        opacity: 0.5;
+                        transition: 300ms;
+                        &:hover{
+                            cursor: pointer;
+                            opacity: 1;
+                        }
+                    }
                 }
                 button {
                     width: 150px;

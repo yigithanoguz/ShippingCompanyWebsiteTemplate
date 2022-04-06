@@ -8,6 +8,8 @@ body {
 body main header nav {
   z-index: 1;
   padding: 0 !important;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 body main header nav div {
@@ -76,6 +78,34 @@ body main section .content .left {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+}
+
+body main section .content .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 10px;
+}
+
+body main section .content .right .icon {
+  opacity: 0.5;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+body main section .content .right .icon:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 body main section .content button {
