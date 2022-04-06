@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body main header nav {
+  z-index: 1;
+  padding: 0 !important;
+}
+
+body main header nav div {
+  height: 50px;
+}
+
+body main header nav div a {
+  font-weight: 600;
+  height: 100%;
+}
+
+body main header .header__logo a {
+  color: white !important;
+}
+
+body main header .header__menu ul {
+  background-color: white !important;
+}
+
+body main header .header__menu a {
+  color: #6c757d !important;
+  text-transform: uppercase;
+}
+
+body main header .header__menu a:hover {
+  color: #ff4136 !important;
+}
+
+body main section {
+  position: relative;
+}
+
+body main section .carousel {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  /* for 100vw without scrollbar */
+  background-image: url(../img/carousel-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+body main section .content {
+  padding: 100px;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  /* for 100vw without scrollbar */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body main section .content .left {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+body main section .content button {
+  width: 150px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  /*sağ çubuk*/
+  height: 10px;
+  /* alt çubuk */
+  background-color: lightgray;
+  /*scrollbar arkaplan renk*/
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6c757d !important;
+  /*scrollbar renk*/
+  border-radius: 15px;
+}
+/*# sourceMappingURL=main.css.map */
