@@ -5,6 +5,9 @@ $color-black: black !important;
 $color-white: white !important;
 $danger: #ff4136 !important;
 $secondary: #6c757d !important;
+$card-bg: rgb(242, 242, 242);
+$form-bg: rgb(255, 246, 230);
+$header-bg: rgb(242, 242, 242);
 
 
 body {
@@ -17,10 +20,11 @@ body {
                 z-index: 1;
                 padding: 0 !important;
                 transition: 300ms;
-
+                background-color: $card-bg !important;
+                
                 div {
                     height: 50px;
-
+                    
                     a {
                         font-weight: 600;
                         height: 100%;
@@ -33,14 +37,17 @@ body {
                 }
             }
             .header__menu {
-                ul{
-                    background-color: $color-white;
-                }
                 a {
                     color: $secondary;
                     text-transform: uppercase;
+                    span {
+                        transition: 300ms;
+                    }
                     &:hover {
                         color: $danger;
+                        span {
+                            color: $danger;
+                        }
                     }
                 }
             }
@@ -192,6 +199,175 @@ body {
                 //     font-size: 4rem;
                 // }
             }
+
+            &.main__section-4 {
+                width: 100%;
+                // height: 100vh;
+                // padding: 0 100px;
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                .fw-bolder {
+                    font-size: 3rem !important;
+                    font-weight: 800 !important;
+                }
+            }
+            .main__section-4__card-group {
+
+                .card {
+                    padding: 20px;
+                }
+                .card-group {
+                    gap: 5px;
+                }
+            }
+
+            &.main__section-5 {
+                width: 100%;
+                height: 100vh;
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .main__section-5__container {
+                height: 100%;
+                width: 100%;
+                padding-top: 150px;
+                gap: 50px;
+                button {
+                    width: 200px;
+                }
+            }
+            .main__section-5__container__left {
+                // img {
+                    //     height: 75vh;
+                    //     width: 100%;
+                    // }
+                    background-image: url(../img/feature.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+            }
+            .main__section-5__container__right {
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-between;
+                & > * {
+                padding-left: 100px;
+                }
+                .fw-bolder {
+                    font-size: 3rem !important;
+                    font-weight: 800 !important;
+                }
+            }
+            .main__section-5__container__cards {
+                // gap: 20px;
+                .card {
+                    border: none;
+                    flex-direction: row;
+                }
+            }
+
+
+            &.main__section-6 {
+                width: 100%;
+                height: 100vh;
+                padding: 150px 100px;
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                .fw-bolder {
+                    font-size: 3rem !important;
+                    font-weight: 800 !important;
+                }
+                .card-group {
+                    background-color: $card-bg;
+                }
+            }
+
+            &.main__section-7 {
+                width: 100%;
+                height: 100vh;
+                .main__section-7__container__left {
+                    *{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+            .main__section-7__container {
+                height: 100%;
+                max-width: 100%;
+                padding: 150px 100px;
+                gap: 50px;
+            }
+            .main__section-7__container__left {
+                max-height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .fw-bolder {
+                    font-size: 3rem !important;
+                    font-weight: 800 !important;
+                }
+            }
+            .main__section-7__container__right {
+                height: 100%;
+                background-color: $form-bg;
+                form {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    textarea {
+                        height: 100px;
+                    }
+                }
+            }
+            &.main__section-8 {
+                width: 100%;
+                height: 100vh;
+                padding: 0px 100px;
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                .fw-bolder {
+                    font-size: 3rem !important;
+                    font-weight: 800 !important;
+                }
+                .card-group {
+                    background-color: $card-bg;
+                }
+            }
+
+            &.main__section-9 {
+                width: 100%;
+                height: 100vh;
+                padding: 0px 100px;
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                .fw-bolder {
+                    font-size: 3rem !important;
+                    font-weight: 800 !important;
+                }
+                .card {
+                    padding: 30px;
+                    img {
+                        width: 70px;
+                    }
+                }
+            }
+        
+        }
+
+        footer {
+            padding: 100px;
+            background-color: black;
         }
     }
 }

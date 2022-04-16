@@ -16,6 +16,7 @@ body main header nav {
   padding: 0 !important;
   -webkit-transition: 300ms;
   transition: 300ms;
+  background-color: #f2f2f2 !important;
 }
 
 body main header nav div {
@@ -31,16 +32,21 @@ body main header .header__logo a {
   color: white !important;
 }
 
-body main header .header__menu ul {
-  background-color: white !important;
-}
-
 body main header .header__menu a {
   color: #6c757d !important;
   text-transform: uppercase;
 }
 
+body main header .header__menu a span {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
 body main header .header__menu a:hover {
+  color: #ff4136 !important;
+}
+
+body main header .header__menu a:hover span {
   color: #ff4136 !important;
 }
 
@@ -245,6 +251,210 @@ body main section .main__section-3__container__cards .card-3 {
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: c3;
+}
+
+body main section.main__section-4 {
+  width: 100%;
+}
+
+body main section.main__section-4 * {
+  margin: 0;
+  padding: 0;
+}
+
+body main section.main__section-4 .fw-bolder {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+}
+
+body main section .main__section-4__card-group .card {
+  padding: 20px;
+}
+
+body main section .main__section-4__card-group .card-group {
+  gap: 5px;
+}
+
+body main section.main__section-5 {
+  width: 100%;
+  height: 100vh;
+}
+
+body main section.main__section-5 * {
+  margin: 0;
+  padding: 0;
+}
+
+body main section .main__section-5__container {
+  height: 100%;
+  width: 100%;
+  padding-top: 150px;
+  gap: 50px;
+}
+
+body main section .main__section-5__container button {
+  width: 200px;
+}
+
+body main section .main__section-5__container__left {
+  background-image: url(../img/feature.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body main section .main__section-5__container__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main section .main__section-5__container__right > * {
+  padding-left: 100px;
+}
+
+body main section .main__section-5__container__right .fw-bolder {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+}
+
+body main section .main__section-5__container__cards .card {
+  border: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main section.main__section-6 {
+  width: 100%;
+  height: 100vh;
+  padding: 150px 100px;
+}
+
+body main section.main__section-6 * {
+  margin: 0;
+  padding: 0;
+}
+
+body main section.main__section-6 .fw-bolder {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+}
+
+body main section.main__section-6 .card-group {
+  background-color: #f2f2f2;
+}
+
+body main section.main__section-7 {
+  width: 100%;
+  height: 100vh;
+}
+
+body main section.main__section-7 .main__section-7__container__left * {
+  margin: 0;
+  padding: 0;
+}
+
+body main section .main__section-7__container {
+  height: 100%;
+  max-width: 100%;
+  padding: 150px 100px;
+  gap: 50px;
+}
+
+body main section .main__section-7__container__left {
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main section .main__section-7__container__left .fw-bolder {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+}
+
+body main section .main__section-7__container__right {
+  height: 100%;
+  background-color: #fff6e6;
+}
+
+body main section .main__section-7__container__right form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main section .main__section-7__container__right form textarea {
+  height: 100px;
+}
+
+body main section.main__section-8 {
+  width: 100%;
+  height: 100vh;
+  padding: 0px 100px;
+}
+
+body main section.main__section-8 * {
+  margin: 0;
+  padding: 0;
+}
+
+body main section.main__section-8 .fw-bolder {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+}
+
+body main section.main__section-8 .card-group {
+  background-color: #f2f2f2;
+}
+
+body main section.main__section-9 {
+  width: 100%;
+  height: 100vh;
+  padding: 0px 100px;
+}
+
+body main section.main__section-9 * {
+  margin: 0;
+  padding: 0;
+}
+
+body main section.main__section-9 .fw-bolder {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+}
+
+body main section.main__section-9 .card {
+  padding: 30px;
+}
+
+body main section.main__section-9 .card img {
+  width: 70px;
+}
+
+body main footer {
+  padding: 100px;
+  background-color: black;
 }
 
 ::-webkit-scrollbar {
