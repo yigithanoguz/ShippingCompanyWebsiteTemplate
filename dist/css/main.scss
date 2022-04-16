@@ -8,6 +8,7 @@ $secondary: #6c757d !important;
 $card-bg: rgb(242, 242, 242);
 $form-bg: rgb(255, 246, 230);
 $header-bg: rgb(242, 242, 242);
+$footer-bg: rgb(0, 4, 19);
 
 
 body {
@@ -214,7 +215,7 @@ body {
                 }
             }
             .main__section-4__card-group {
-
+                // background-color: $card-bg;
                 .card {
                     padding: 20px;
                 }
@@ -367,7 +368,15 @@ body {
 
         footer {
             padding: 100px;
-            background-color: black;
+            padding-bottom: 0px;
+            background-color: $footer-bg;
+            .icon {
+                width: 35px;
+                height: 35px;
+            }
+            background-image: url(../img/map.png);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }
