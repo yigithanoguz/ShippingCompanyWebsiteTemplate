@@ -454,7 +454,16 @@ body main section.main__section-9 .card img {
 
 body main footer {
   padding: 100px;
-  background-color: black;
+  padding-bottom: 0px;
+  background-color: #000413;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body main footer .icon {
+  width: 35px;
+  height: 35px;
 }
 
 ::-webkit-scrollbar {
