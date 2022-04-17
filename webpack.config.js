@@ -29,5 +29,10 @@ module.exports = {
             filename: 'index.html',
             template: 'src/template.html'
         })
-    ]
+    ],
+    resolve: {
+        alias: {
+           '@scss': path.join(__dirname, 'src/css') 
+       }
+    }
 }

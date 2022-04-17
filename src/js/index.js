@@ -1,1 +1,1 @@
-import '../../dist/css/main.scss';
+import '@scss/main.scss';
